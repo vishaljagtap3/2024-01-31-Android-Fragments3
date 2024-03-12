@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/edtCount"
+        android:hint="Enter count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Reset"
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <fragment
+        android:id="@+id/counterFragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="in.bitcode.fragments2.CounterFragment" />
+
+    <fragment
+        android:id="@+id/counterFragment2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="in.bitcode.fragments2.CounterFragment" />
+
+</LinearLayout>
